@@ -8,8 +8,8 @@ import { createBottomSheetNavigator } from "@th3rdwave/react-navigation-bottom-s
 import { OnboardingScreen } from "../screens/WelcomeScreen/index";
 import { SignInScreen } from "../screens/LoginScreen/index";
 import { Routes } from "./routes";
-import { SignUpScreen } from "../screens/SignUpScreen";
 import { TestingScreen } from "../screens/TestingScreen";
+import SignUpScreen from "../screens/SignUpScreen";
 
 const BottomSheet = createBottomSheetNavigator();
 
