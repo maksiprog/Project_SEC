@@ -26,8 +26,7 @@ export const Button = ({
       textColorVariant = "text-white";
       break;
     case "light":
-      style =
-        "bg-white border-black rounded-t-lg rounded-b-l outline-none border-solid border touch-manipulation relative m-0 ";
+      style = "bg-neutral-200";
       textColorVariant = "text-black";
       break;
     case "dark":
@@ -36,7 +35,8 @@ export const Button = ({
       break;
   }
 
-  const box = "inline-flex items-center border border-transparent rounded-md";
+  const box =
+    "inline-flex items-center border border-transparent rounded-md shadow-sm";
   const classNames = `${styles} ${box} ${style}`;
   const textClassNames = `${textStyle} ${textColorVariant}`;
 

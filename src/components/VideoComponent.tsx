@@ -14,7 +14,7 @@ const VideoComponent = ({ url }) => {
           uri: url,
         }}
         useNativeControls
-        resizeMode="contain"
+        resizeMode="stretch"
         isMuted
         shouldPlay
         isLooping

@@ -8,7 +8,6 @@ import { createBottomSheetNavigator } from "@th3rdwave/react-navigation-bottom-s
 import { OnboardingScreen } from "../screens/WelcomeScreen/index";
 import { SignInScreen } from "../screens/LoginScreen/index";
 import { Routes } from "./routes";
-import { TestingScreen } from "../screens/TestingScreen";
 import SignUpScreen from "../screens/SignUpScreen";
 
 const BottomSheet = createBottomSheetNavigator();
@@ -44,14 +43,6 @@ export const Navigator = () => {
             handleStyle: { position: "absolute", top: -30, width: "100%" },
             handleIndicatorStyle: { width: 60 },
           }}
-        />
-        <BottomSheet.Screen
-          name={Routes.SIGN_IN_SCREEN}
-          component={SignUpScreen}
-        />
-        <BottomSheet.Screen
-          name={Routes.TESTING_SCREEN}
-          component={TestingScreen}
         />
       </BottomSheet.Navigator>
     </NavigationContainer>
