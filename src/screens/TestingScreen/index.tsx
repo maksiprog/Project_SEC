@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, Dimensions } from "react-native";
+import VideoComponent from "../../components/VideoComponent";
 import Swiper from "react-native-swiper";
 const { width, height } = Dimensions.get("window");
 
@@ -25,13 +26,13 @@ export const TestingScreen = () => {
         loop={false}
       >
         <View className=" flex-1 bg-transparent">
-          <Image style={styles.image} source={require("./images/1.jpeg")} />
+          <VideoComponent url="https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4" />
         </View>
         <View className=" flex-1 bg-transparent">
-          <Image style={styles.image} source={require("./images/2.jpeg")} />
+          <VideoComponent url="https://static.videezy.com/system/resources/previews/000/008/445/original/Dark_Haired_Girl_in_disbelief_1.mp4" />
         </View>
         <View className=" flex-1 bg-transparent">
-          <Image style={styles.image} source={require("./images/3.jpeg")} />
+          <VideoComponent url="https://static.videezy.com/system/resources/previews/000/019/708/original/winter2.mp4" />
         </View>
       </Swiper>
     </View>

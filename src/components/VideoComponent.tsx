@@ -2,7 +2,7 @@ import * as React from "react";
 import { View, Button } from "react-native";
 import { Video, AVPlaybackStatus } from "expo-av";
 
-const SignUpScreen = () => {
+const VideoComponent = ({ url }) => {
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   return (
@@ -11,10 +11,12 @@ const SignUpScreen = () => {
         className="w-full h-full"
         ref={video}
         source={{
-          uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+          uri: url,
         }}
         useNativeControls
         resizeMode="contain"
+        isMuted
+        shouldPlay
         isLooping
         onPlaybackStatusUpdate={(status) => setStatus(() => status)}
       />
@@ -32,4 +34,4 @@ const SignUpScreen = () => {
   );
 };
 
-export default SignUpScreen;
+export default VideoComponent;
